@@ -42,6 +42,7 @@ function Multiply {
         [int]$a,
         [int]$b
     )
+    return $a*$b
 }
 
 
@@ -51,6 +52,7 @@ function Divide{
         [int]$a,
         [int]$b
     )
+    return $a/$b
 }
 
 
@@ -60,6 +62,7 @@ function Remainder{
         [int]$a,
         [int]$b
     )
+    return $a%$b
 }
 
 function DisplayAnswer {
@@ -70,14 +73,17 @@ function DisplayAnswer {
     $string2 = $answer
     $string1 + " " + $string2
 
-    $a = 1
-    $b = 2
-    $c = 3
-    "I can count $($a), $($b), $($c)"
+   #$a = 1
+   #$b = 2
+   #$c = 3
+    #"I can count $($a), $($b), $($c)"
     #Print "I can count: 1, 2, 3" using string interpolation
 }
 
 
 DisplayAnswer(Add 4 3)
 DisplayAnswer(Subtract 4 3)
+DisplayAnswer(Multiply 4 3)
+DisplayAnswer(Divide 4 2)
+DisplayAnswer(Remainder 4 3)
 #TO DO add functionality and print result for each function
